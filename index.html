@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinventory</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4;}
-        header { background: #333; color: #fff; padding: 1.5rem 2rem; }
-        .sheet-container { display: flex; justify-content: center; margin: 2rem 0; }
-        iframe { border: 1px solid #ccc; border-radius: 8px;}
-        footer { background: #222; color: #ccc; text-align: center; padding: 1rem; }
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            overflow: hidden;
+            background: #f4f4f4;
+        }
+        iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: 0;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Tinventory</h1>
-    </header>
-    <div class="sheet-container">
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSZFDAmM8heGbckeFs0tKLxFdUuaHZqMJVrQ8c7eTbv_89-DAre5dDK--IxOCl8Rs7fVqZVc_Uqm-4j/pubhtml?widget=true&amp;headers=false"></iframe>
-    </div>
-    <footer>
-        &copy; 2025 Tinventory. All rights reserved.
-    </footer>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSZFDAmM8heGbckeFs0tKLxFdUuaHZqMJVrQ8c7eTbv_89-DAre5dDK--IxOCl8Rs7fVqZVc_Uqm-4j/pubhtml?widget=true&amp;headers=false" allowfullscreen></iframe>
 </body>
 </html>
